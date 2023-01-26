@@ -6,12 +6,10 @@ import {
   Text,
   StyleSheet,
   FlatList,
-  ScrollView,
-  Image,
-  Dimensions,
 } from 'react-native';
 import products from './products.json';
 import ProductCard from './components/Product/ProductCard';
+import Search from './components/Search/search';
 
 function App() {
   // eslint-disable-next-line prettier/prettier
@@ -25,6 +23,7 @@ function App() {
 
       <View>
         <FlatList
+          ListHeaderComponent={<Search />}
           data={products}
           renderItem={renderProduct}
           numColumns={2}
