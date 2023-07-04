@@ -1,0 +1,6 @@
+*.js linguist-detectable=true 
+*.ts linguist-detectable=false  
+*.java linguist-detectable=false  
+*.ruby linguist-detectable=false  
+*.Objective-C linguist-detectable=false
+*.Objective-C++ linguist-detectable=false
